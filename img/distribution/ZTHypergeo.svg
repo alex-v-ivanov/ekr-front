@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ZTHypergeo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dc4b5b;
+      }
+
+      .cls-2 {
+        fill: #004c97;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke: #ccd0d4;
+        stroke-width: .5px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-5" y="0" width="49" height="30"/>
+    </clipPath>
+  </defs>
+  <g>
+    <g class="cls-6">
+      <g>
+        <rect class="cls-3" y="0" width="49" height="30"/>
+        <rect class="cls-2" x="1" y="28" width="3.5" height="2"/>
+        <rect class="cls-2" x="6.38" y="26" width="3.5" height="4"/>
+        <rect class="cls-2" x="11.75" y="18" width="3.5" height="12"/>
+        <rect class="cls-2" x="17.12" y="7" width="3.5" height="23"/>
+        <rect class="cls-2" x="22.5" y="1" width="3.5" height="29"/>
+        <rect class="cls-2" x="27.88" y="7" width="3.5" height="23"/>
+        <rect class="cls-2" x="33.25" y="18" width="3.5" height="13"/>
+        <rect class="cls-2" x="38.62" y="26" width="3.5" height="5"/>
+        <rect class="cls-2" x="44" y="28" width="3.5" height="1.92"/>
+      </g>
+    </g>
+    <rect class="cls-4" x=".25" y=".25" width="48.5" height="29.5"/>
+  </g>
+  <path d="M3.83,6.15c0-1.47.65-3.1,2.3-3.1s2.3,1.63,2.3,3.1-.66,3.11-2.3,3.11-2.3-1.65-2.3-3.11ZM7.66,6.15c0-1.2-.39-2.43-1.53-2.43s-1.53,1.23-1.53,2.43.39,2.44,1.53,2.44,1.53-1.24,1.53-2.44Z"/>
+  <path class="cls-1" d="M2.11,3.26l7.66,6.09c.11.09.27.07.35-.04s.07-.27-.04-.35L2.42,2.86c-.11-.09-.27-.07-.35.04s-.07.27.04.35"/>
+</svg>

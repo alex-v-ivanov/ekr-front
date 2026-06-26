@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Histogram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004c97;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #ccd0d4;
+        stroke-width: .5px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" width="49" height="30"/>
+    </clipPath>
+  </defs>
+  <g class="cls-5">
+    <g>
+      <rect class="cls-2" width="49" height="30"/>
+      <polygon class="cls-1" points="2.53 29.62 2.53 23 6.53 23 6.53 18.91 10.7 18.91 10.7 15.76 14.7 15.76 14.7 11.59 20.49 11.59 20.49 1.38 24.91 1.38 24.91 5.55 28.91 5.55 28.91 9.72 33.17 9.72 33.17 14.62 37 14.62 37 20.62 41.17 20.62 41.17 27 45.09 27 45.09 29.62 2.53 29.62"/>
+    </g>
+  </g>
+  <rect class="cls-3" x=".25" y=".25" width="48.5" height="29.5"/>
+</svg>

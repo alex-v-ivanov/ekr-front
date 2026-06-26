@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Конфигуратор прогнозирования</title>
+    <script src="../assets/platform_modules/build/PP.js"></script>
+    <script src="../assets/platform_modules/build/PP.Util.js"></script>
+    <script src="../assets/platform_modules/build/PP.Metabase.js"></script>
+    <script src="../assets/platform_modules/build/PP.App.js"></script>
+    <link rel="stylesheet" href="../assets/platform_modules/build/PP.css" />
+
+    <!-- Копировать в отчёты -->
+    <link rel="stylesheet" href="fonts/Proxima Nova/stylesheet.css" />
+    <link rel="stylesheet" href="libs/Select2/select2.min.css" />
+    <link rel="stylesheet" href="libs/air-datepicker-3.6.0/air-datepicker.min.css?v=3" />
+    <link rel="stylesheet/less" href="less/PrognozConf.less?v=20250131185746 90420 85849 92328 92145 84278" />
+
+</head>
+
+<body>
+    <div class="content contentPrognoz">
+        <div class="page__prognoz">
+            <div class="page__block__title">
+                <h1 class="page__title"></h1>
+            </div>
+            <div class="page__block">
+                <section class="page__block block-prognoz-id">
+                </section>
+                <section class="page__block block-parameters" block="parameters">
+                    <div class="block-parameters__nav">
+                        <h2 class="section__title">Параметры</h2>
+                    </div>
+                    <div class="block-parameters__body">
+
+                    </div>
+                </section>
+                <section class="page__block block-parameters" block="macroparameters">
+                    <div class="block-parameters__nav">
+                        <h2 class="section__title">Макропараметры</h2>
+                    </div>
+                    <div class="block-parameters__body">
+
+                    </div>
+                </section>
+                <section class="page__block block-parameters" block="scenarioIndicatorsRCFF">
+                    <div class="block-parameters__nav">
+                        <h2 class="section__title">Сценарные показатели RCFF</h2>
+                        <div class="Hidden" input="forecastDefault">
+                            <div class="block-parameters__box" style="display: flex; gap: 0.5rem; align-items: center;">
+                                <label class="dropdown">
+                                    <select id="forecastDefault"></select>
+                                    <svg width="18" height="18" viewBox="0 0 32 32" fill="#004C97"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M26.7074 12.7075L16.7074 22.7075C16.6146 22.8005 16.5043 22.8742 16.3829 22.9246C16.2615 22.9749 16.1314 23.0008 15.9999 23.0008C15.8685 23.0008 15.7384 22.9749 15.617 22.9246C15.4956 22.8742 15.3853 22.8005 15.2924 22.7075L5.29245 12.7075C5.1048 12.5199 4.99939 12.2654 4.99939 12C4.99939 11.7346 5.1048 11.4801 5.29245 11.2925C5.48009 11.1049 5.73458 10.9995 5.99995 10.9995C6.26531 10.9995 6.5198 11.1049 6.70745 11.2925L15.9999 20.5863L25.2924 11.2925C25.3854 11.1996 25.4957 11.1259 25.6171 11.0756C25.7384 11.0253 25.8686 10.9995 25.9999 10.9995C26.1313 10.9995 26.2614 11.0253 26.3828 11.0756C26.5042 11.1259 26.6145 11.1996 26.7074 11.2925C26.8004 11.3854 26.8741 11.4957 26.9243 11.6171C26.9746 11.7385 27.0005 11.8686 27.0005 12C27.0005 12.1314 26.9746 12.2615 26.9243 12.3829C26.8741 12.5043 26.8004 12.6146 26.7074 12.7075Z" />
+                                    </svg>
+                                </label>
+                                <div class="Button Outline" title="Применить" onclick="Reports.Prognoz.Applay()">
+                                    <div class="Text">
+                                        <div>Применить</div>
+                                    </div>
+                                </div>
+                                <svg width="24"
+                                    tooltipe="Укажите версию ФВ для наследования всех сценарных показателей. После наследования при необходимости можно вручную выбрать другие версии ФВ для отдельных показательей. Кнопка не применяется к показателям «Объем производства металла» и «Объем реализации металлас»"
+                                    height="24" viewBox="0 0 32 32" fill="#004C97" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.5 22.5C17.5 22.7967 17.412 23.0867 17.2472 23.3334C17.0824 23.58 16.8481 23.7723 16.574 23.8858C16.2999 23.9993 15.9983 24.0291 15.7074 23.9712C15.4164 23.9133 15.1491 23.7704 14.9393 23.5607C14.7296 23.3509 14.5867 23.0836 14.5288 22.7926C14.471 22.5017 14.5007 22.2001 14.6142 21.926C14.7277 21.6519 14.92 21.4176 15.1667 21.2528C15.4133 21.088 15.7033 21 16 21C16.3978 21 16.7794 21.158 17.0607 21.4393C17.342 21.7206 17.5 22.1022 17.5 22.5ZM16 9C13.2425 9 11 11.0188 11 13.5V14C11 14.2652 11.1054 14.5196 11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14V13.5C13 12.125 14.3463 11 16 11C17.6538 11 19 12.125 19 13.5C19 14.875 17.6538 16 16 16C15.7348 16 15.4804 16.1054 15.2929 16.2929C15.1054 16.4804 15 16.7348 15 17V18C15 18.2652 15.1054 18.5196 15.2929 18.7071C15.4804 18.8946 15.7348 19 16 19C16.2652 19 16.5196 18.8946 16.7071 18.7071C16.8946 18.5196 17 18.2652 17 18V17.91C19.28 17.4913 21 15.6725 21 13.5C21 11.0188 18.7575 9 16 9ZM29 16C29 18.5712 28.2376 21.0846 26.8091 23.2224C25.3807 25.3603 23.3503 27.0265 20.9749 28.0104C18.5995 28.9944 15.9856 29.2518 13.4638 28.7502C10.9421 28.2486 8.6257 27.0105 6.80762 25.1924C4.98953 23.3743 3.75141 21.0579 3.2498 18.5362C2.74819 16.0144 3.00563 13.4006 3.98957 11.0251C4.97351 8.64968 6.63975 6.61935 8.77759 5.1909C10.9154 3.76244 13.4288 3 16 3C19.4467 3.00364 22.7512 4.37445 25.1884 6.81163C27.6256 9.24882 28.9964 12.5533 29 16ZM27 16C27 13.8244 26.3549 11.6977 25.1462 9.88873C23.9375 8.07979 22.2195 6.66989 20.2095 5.83733C18.1995 5.00476 15.9878 4.78692 13.854 5.21136C11.7202 5.6358 9.76021 6.68345 8.22183 8.22183C6.68345 9.7602 5.63581 11.7202 5.21137 13.854C4.78693 15.9878 5.00477 18.1995 5.83733 20.2095C6.66989 22.2195 8.07979 23.9375 9.88873 25.1462C11.6977 26.3549 13.8244 27 16 27C18.9164 26.9967 21.7123 25.8367 23.7745 23.7745C25.8367 21.7123 26.9967 18.9164 27 16Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-parameters__body" style="flex-direction: column;">
+                        <div class="scenarioIndicators__nav"></div>
+
+                        <div class="scenarioIndicators__body"></div>
+                    </div>
+                </section>
+                <section class="page__block block-parameters Hidden" block="scenType">
+                    <div class="block-parameters__nav">
+                        <h2 class="section__title">Версии прогноза RCFF</h2>
+                    </div>
+                    <div class="block-parameters__body"
+                        style="flex-direction: column; position: relative; gap: 0.5rem;">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="SelectDetails Hidden" id="select_Details_block" style="padding-bottom: 2rem;">
+        <div class="SelectDetailsBlock">
+            <div class="SelectDetailsNav">
+                <div class="SelectDetailsTitle">Подробнее</div>
+                <div style="cursor: pointer;" onclick="Reports.Prognoz.detailsPopUp.closeModal();">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.7075 24.2925C25.8004 24.3854 25.8741 24.4957 25.9244 24.6171C25.9747 24.7385 26.0006 24.8686 26.0006 25C26.0006 25.1314 25.9747 25.2615 25.9244 25.3829C25.8741 25.5043 25.8004 25.6146 25.7075 25.7075C25.6146 25.8004 25.5043 25.8741 25.3829 25.9244C25.2615 25.9747 25.1314 26.0006 25 26.0006C24.8686 26.0006 24.7385 25.9747 24.6171 25.9244C24.4957 25.8741 24.3854 25.8004 24.2925 25.7075L16 17.4138L7.70751 25.7075C7.51987 25.8951 7.26537 26.0006 7.00001 26.0006C6.73464 26.0006 6.48015 25.8951 6.29251 25.7075C6.10487 25.5199 5.99945 25.2654 5.99945 25C5.99945 24.7346 6.10487 24.4801 6.29251 24.2925L14.5863 16L6.29251 7.70751C6.10487 7.51987 5.99945 7.26537 5.99945 7.00001C5.99945 6.73464 6.10487 6.48015 6.29251 6.29251C6.48015 6.10487 6.73464 5.99945 7.00001 5.99945C7.26537 5.99945 7.51987 6.10487 7.70751 6.29251L16 14.5863L24.2925 6.29251C24.4801 6.10487 24.7346 5.99945 25 5.99945C25.2654 5.99945 25.5199 6.10487 25.7075 6.29251C25.8951 6.48015 26.0006 6.73464 26.0006 7.00001C26.0006 7.26537 25.8951 7.51987 25.7075 7.70751L17.4138 16L25.7075 24.2925Z"
+                            fill="#343330" />
+                    </svg>
+                </div>
+            </div>
+            <div class="SelectDetailsContent">
+                <div class="details__block">
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div class="details__item" data-details-block="parameters">
+                            <p class="details__title">Параметры</p>
+                            <div class="details__fields">
+                                <div class="details__field" data-details-field="horizon">
+                                    <p class="details__title">Горизонт :</p>
+                                    <div class="details__box"></div>
+                                </div>
+                                <div class="details__field" data-details-field="scenarioUK">
+                                    <p class="details__title">Сценарий 1С УХ :</p>
+                                    <div class="details__box"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details__item" data-details-block="macroparameters">
+                            <p class="details__title">Макропараметры</p>
+                            <div class="details__fields">
+                                <div class="details__field" data-details-field="well">
+                                    <p class="details__title">Курс :</p>
+                                    <div class="details__box"></div>
+                                </div>
+                                <div class="details__field" data-details-field="interestRate">
+                                    <p class="details__title">Процентная ставка :</p>
+                                    <div class="details__box"></div>
+                                </div>
+                                <div class="details__field" data-details-field="inflationRate">
+                                    <p class="details__title">Уровень инфляции :</p>
+                                    <div class="details__box"></div>
+                                </div>
+                                <div class="details__field" data-details-field="priceProduct">
+                                    <p class="details__title">Цена на металлы/товары :</p>
+                                    <div class="details__box"></div>
+                                </div>
+                                <div class="details__field" data-details-field="inflationProp">
+                                    <p class="details__title">Показатель инфляции :</p>
+                                    <div class="details__box">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details__item" data-details-block="scenarioIndicatorsRCFF" style="grid-row: span 2;">
+                        <p class="details__title">Сценарные показатели RCFF</p>
+                        <div class="details__nav">
+
+                        </div>
+                        <div class="details__body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="SelectHelp Hidden" id="select_Help_block" style="padding-bottom: 2rem;">
+        <div class="SelectHelpBlock">
+            <div class="SelectHelpNav">
+                <div class="SelectHelpTitle">Помощь</div>
+                <div style="cursor: pointer;" onclick="Reports.Prognoz.helpPopUp.closeModal();">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.7075 24.2925C25.8004 24.3854 25.8741 24.4957 25.9244 24.6171C25.9747 24.7385 26.0006 24.8686 26.0006 25C26.0006 25.1314 25.9747 25.2615 25.9244 25.3829C25.8741 25.5043 25.8004 25.6146 25.7075 25.7075C25.6146 25.8004 25.5043 25.8741 25.3829 25.9244C25.2615 25.9747 25.1314 26.0006 25 26.0006C24.8686 26.0006 24.7385 25.9747 24.6171 25.9244C24.4957 25.8741 24.3854 25.8004 24.2925 25.7075L16 17.4138L7.70751 25.7075C7.51987 25.8951 7.26537 26.0006 7.00001 26.0006C6.73464 26.0006 6.48015 25.8951 6.29251 25.7075C6.10487 25.5199 5.99945 25.2654 5.99945 25C5.99945 24.7346 6.10487 24.4801 6.29251 24.2925L14.5863 16L6.29251 7.70751C6.10487 7.51987 5.99945 7.26537 5.99945 7.00001C5.99945 6.73464 6.10487 6.48015 6.29251 6.29251C6.48015 6.10487 6.73464 5.99945 7.00001 5.99945C7.26537 5.99945 7.51987 6.10487 7.70751 6.29251L16 14.5863L24.2925 6.29251C24.4801 6.10487 24.7346 5.99945 25 5.99945C25.2654 5.99945 25.5199 6.10487 25.7075 6.29251C25.8951 6.48015 26.0006 6.73464 26.0006 7.00001C26.0006 7.26537 25.8951 7.51987 25.7075 7.70751L17.4138 16L25.7075 24.2925Z"
+                            fill="#343330" />
+                    </svg>
+                </div>
+            </div>
+            <div class="SelectHelpContent">
+                <iframe src="/dba-ekr/Reports/files/Валидация.pdf" height="500"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="waiter Hidden"></div>
+
+    <script src="libs/jquery/jquery-3.3.1.es5.min.js"></script>
+    <script defer src="libs/moment/moment.min.js"></script>
+    <script defer src="libs/Select2/select2.min.js"></script>
+    <script defer src="libs/air-datepicker-3.6.0/air-datepicker.js"></script>
+    <script defer src="libs/tooltip/popper.min.js"></script>
+    <script defer src="libs/tooltip/tippy-bundle.umd.min.js"></script>
+    <script src="js/debug.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script src="libs/less/less.js" type="text/javascript"></script>
+    <!-- Копировать в отчёты -->
+</body>
+
+</html>

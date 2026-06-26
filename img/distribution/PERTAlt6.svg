@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="PERTAlt6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004c97;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #ccd0d4;
+        stroke-width: .5px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" width="49" height="30"/>
+    </clipPath>
+  </defs>
+  <g class="cls-5">
+    <g>
+      <rect class="cls-2" width="49" height="30"/>
+      <path class="cls-1" d="m47.49,29.52c-5.75,-1.74 -4.82,-1.22 -7.87,-2.53c-3.05,-1.29 -3.18,-1.79 -4.92,-3.39c-1.74,-1.61 -3.42,-4.08 -4.95,-5.77l-5.38,-7.05c-2.73,-3.92 -2.86,-4.26 -4.43,-5.92c-1.56,-1.66 -2.87,-2.99 -4.46,-3.02c-1.57,-0.03 -2.21,0.46 -3.3,1.33c-1.08,0.88 -2.14,2.88 -3.53,5.34c-1.39,2.47 -3.68,7.11 -7.41,21.01l46.24,-0.01l0,0.01z"/>
+    </g>
+  </g>
+  <rect class="cls-3" x=".25" y=".25" width="48.5" height="29.5"/>
+</svg>

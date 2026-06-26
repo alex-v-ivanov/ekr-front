@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Binomial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004c97;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #ccd0d4;
+        stroke-width: .5px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" y="0" width="49" height="30"/>
+    </clipPath>
+  </defs>
+  <g class="cls-5">
+    <g>
+      <rect class="cls-2" y="0" width="49" height="30"/>
+      <rect class="cls-1" x="1" y="28" width="3.5" height="2"/>
+      <rect class="cls-1" x="5.78" y="26" width="3.5" height="4"/>
+      <rect class="cls-1" x="10.56" y="18" width="3.5" height="12"/>
+      <rect class="cls-1" x="15.34" y="11.34" width="3.5" height="18.66"/>
+      <rect class="cls-1" x="20.13" y="4.62" width="3.5" height="25.38"/>
+      <rect class="cls-1" x="24.91" y="1" width="3.5" height="29"/>
+      <rect class="cls-1" x="29.69" y="11.42" width="3.5" height="18.58"/>
+      <rect class="cls-1" x="34.47" y="18" width="3.5" height="13"/>
+      <rect class="cls-1" x="39.25" y="26" width="3.5" height="5"/>
+      <rect class="cls-1" x="44.03" y="28" width="3.5" height="2"/>
+    </g>
+  </g>
+  <rect class="cls-3" x=".25" y=".25" width="48.5" height="29.5"/>
+</svg>

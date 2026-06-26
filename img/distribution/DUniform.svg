@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="DUniform" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004c97;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #ccd0d4;
+        stroke-width: .5px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" y="0" width="49" height="30"/>
+    </clipPath>
+  </defs>
+  <g class="cls-5">
+    <g>
+      <rect class="cls-2" y="0" width="49" height="30"/>
+      <rect class="cls-1" x="2.65" y="2.98" width="3.5" height="26.83"/>
+      <rect class="cls-1" x="7.31" y="2.98" width="3.5" height="26.83"/>
+      <rect class="cls-1" x="37.76" y="2.98" width="3.5" height="26.83"/>
+      <rect class="cls-1" x="42.41" y="2.98" width="3.5" height="26.83"/>
+      <rect class="cls-1" x="18.67" y="2.98" width="3.5" height="26.83"/>
+      <rect class="cls-1" x="23.07" y="2.98" width="3.5" height="26.83"/>
+      <rect class="cls-1" x="27.48" y="2.98" width="3.5" height="26.83"/>
+    </g>
+  </g>
+  <rect class="cls-3" x=".25" y=".25" width="48.5" height="29.5"/>
+</svg>

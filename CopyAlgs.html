@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Копии алгоритмов расчета</title>
+    
+    <!-- Модули ФАП -->
+    <script src="../assets/platform_modules/build/PP.js"></script>
+    <script src="../assets/platform_modules/build/PP.Util.js"></script>
+    <script src="../assets/platform_modules/build/PP.Metabase.js"></script>
+    <script src="../assets/platform_modules/build/PP.App.js"></script>
+    <link rel="stylesheet" href="../assets/platform_modules/build/PP.css" />
+
+    <!-- Шрифты -->
+    <link rel="stylesheet" href="fonts/Proxima Nova/stylesheet.css">
+    <link rel="stylesheet/less" href="less/AlgUtils.less?v=8">
+    <script src="libs/less/less.js" type="text/javascript"></script>
+    
+    <!-- Tippy.js -->
+    <script defer src="libs/tooltip/popper.min.js"></script>
+    <script defer src="libs/tooltip/tippy-bundle.umd.min.js"></script>
+    
+    <!-- Debug -->
+    <script src="js/debug.js"></script>
+    <script src="libs/jquery/jquery-3.3.1.es5.min.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="content">
+            <div class="page-header">
+                <h1 class="page-title">Копирование алгоритмов расчета</h1>
+                <div class="system-status" id="systemStatus">
+                    <span class="status-label">Состояние:</span>
+                    <div class="status-indicator">
+                        <span class="status-dot green" id="statusDot"></span>
+                        <span class="status-text" id="statusText">Готов к работе</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="block-nav">
+                    <h2 class="block-title">Список копий алгоритмов</h2>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="createCopyBtn">Создать</button>
+                        <div class="Rectangle1"></div>
+                        <button class="btn btn-primary" id="restoreOriginalBtn">Восстановить исходный</button>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <div class="table-container copies-table">
+                        <div class="FrameList">
+                            <div class="ListHeadlines">
+                                <div class="HeadlineItem LongItem">Название</div>
+                                <div class="HeadlineItem LongItem">Комментарий</div>
+                                <div class="HeadlineItem ShortItem">Дата</div>
+                                <div class="HeadlineItem ShortItem">Действия</div>
+                            </div>
+                            <div class="listBlockInput">
+                                <ul id="copiesList" class="ListContent"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="waiter Hidden" id="waiter"></div>
+
+    <!-- Запуск -->
+    <script type="module">
+		const { default: run } = await import('./js/CopyAlgs/index.js');
+		const controller = run();
+		window.app = controller;
+    </script>
+</body>
+
+</html>

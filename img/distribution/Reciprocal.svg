@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Reciprocal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004c97;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #ccd0d4;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M13.68,29.82V1.65s6.81,20.77,22.21,20.17v7.91l-22.21.09Z"/>
+  <rect class="cls-2" x=".25" y=".25" width="48.5" height="29.5"/>
+</svg>

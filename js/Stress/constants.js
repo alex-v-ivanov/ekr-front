@@ -1,0 +1,70 @@
+/**
+ * Константы модуля Stress: режимы, сообщения валидации и UI.
+ */
+
+/** Режимы getStressParams и проверок. */
+export const StressModes = {
+    RUN_TEST: "runTest",
+    SAVE: "save",
+    INPUT: "Input",
+    OUTPUT: "Output",
+    PRODUCT: "Product",
+    ADD_NEW_DISTRIBUTION: "addNewDistribution",
+    SEARCH_DISTRIBUTION: "searchDistribution",
+    FILTERING_INDICATOR_INPUT: "filteringIndicatorInput",
+    FILTERING_INDICATOR_OUTPUT: "filteringIndicatorOutput",
+    FILTERING_DISTRIBUTION_INPUT: "filteringDistributionInput",
+    FILTERING_INPUT_ITEMS_NUMBER: "filteringInputItemsNumber",
+    FILTERING_INPUT_ITEMS_NAME: "filteringInputItemsName",
+    FILTERING_INPUT_ITEMS_PRODUCT: "filteringInputItemsProduct",
+    FILTERING_OUTPUT_ITEMS_NUMBER: "filteringOutputItemsNumber",
+    FILTERING_OUTPUT_ITEMS_NAME: "filteringOutputItemsName",
+    FILTERING_OUTPUT_ITEMS_PRODUCT: "filteringOutputItemsProduct"
+};
+
+/** Сообщения валидации и UI для showDialog. */
+export const StressValidationMessages = {
+    PERIOD_VERSION_REQUIRED: 'Ошибка: Заполните поле "Период версии прогноза"',
+    OUTPUT_INDICATORS_NOT_FILLED: "Не заполнены Output-показатели",
+    PROGNOSIS_VERSION_REQUIRED: 'Ошибка: Заполните поле "Версия прогноза"',
+    ITERATION_COUNT_REQUIRED: 'Ошибка: Заполните поле "Количество итераций расчета"',
+    SIMULATION_COUNT_REQUIRED: 'Ошибка: Заполните поле "Количество симуляций"',
+    INDICATORS_NOT_SUPPORTED: "Некоторые из выбранных показателей не поддерживаются в текущей версии прогноза. \n\nПожалуйста, измените набор показателей или выберите другую версию прогноза из списка доступных.",
+    INVALID_HISTORICAL_RANGE: "У некоторых выбранных показателей некорректный исторический диапазон",
+    COULD_NOT_DETERMINE_PROGNOSIS_VERSION: "Не удалось определить прогноз версии",
+    STRESS_TEST_SUCCESS: "Проверка прошла успешно. Стресс-тестирование запущено.",
+    TEST_SUCCESS: "Проверка прошла успешно. Тестирование запущено.",
+    CONFIG_SAVED: "Конфигурация сохранена",
+    COULD_NOT_DETERMINE_REQUIRED_FIELDS: "Не удалось определить обязательные поля",
+    COULD_NOT_GET_DELETE_EXCEL_DATA: "Не удалось получить данные с метода DeleteExcelDataSet",
+    COULD_NOT_DELETE_FILE: "Не удалось удалить файл",
+    ERROR_PREFIX: "Ошибка: ",
+    RUNTIME_ERROR: "Во время выполнения произошла ошибка.",
+    COULD_NOT_FIND_INDICATOR: "Не удалось найти Показатель",
+    CONFIRM_DELETE_INDICATOR: "Вы уверены, что хотите удалить показатель ?",
+    COULD_NOT_SAVE_EXCEL_DATA: "Не удалось получить данные с метода SaveExcelDataSet",
+    COULD_NOT_GET_EXCEL_DATA: "Не удалось получить данные с метода GetExcelDataSets",
+    FILL_REQUIRED_FIELDS: "Заполните обязательные поля!",
+    CONFIRM_DELETE_OUTPUT_INDICATOR: "Вы уверены, что хотите удалить показатель ?",
+    VALUES_PROBABILITIES_MISMATCH: "Значения values и probabilities не равны !",
+    SELECT_INDICATOR: "Выберите показатель",
+    NO_HISTORICAL_RANGE: "Не задан исторический диапазон для INPUT-показателя: ",
+    NO_VALID_RANGE: "Не задан допустимый диапазон для INPUT-показателя: ",
+    NO_DATA_FOR_FIT: "Нет данных для подбора",
+    CONFIRM_DELETE_FILE: "Вы уверены, что хотите удалить файл ?",
+    SOMETHING_WENT_WRONG: "Что-то пошло не так!",
+    CONFIRM_DELETE_CALC_INDICATOR: "Вы уверены, что хотите удалить расчет показателя?",
+    COULD_NOT_GET_DISTRIBUTION_DATA: "Не удалось получить данные с метода GetDistributionData",
+    ERROR_COLON: "Ошибка:",
+    CONFIRM_DELETE_ALL_RECORDS: "Вы уверены, что хотите удалить все записи?",
+    CONFIRM_ADD_ALL_INDICATORS: "Вы уверены, что хотите добавить все показатели?",
+    DISTRIBUTION_LIST_EMPTY: "Список распределений пуст.",
+    PARAM_NOT_SELECTED: "Параметр не выбран!",
+    COULD_NOT_SET_INDICATOR: "Не удалось установить выбранный показатель",
+    COULD_NOT_FIND_SELECTED_INDICATOR: "Не удалось найти выбранный показатель",
+    COULD_NOT_GET_CHOICE_DISTRIBUTION: "Не удалось получить данные с метода ChoiceDistribution",
+    DATA_NOT_FOUND: "Данные не найдены",
+    USER_DATA_LOAD_FAILED: "Не удалось загрузить данные пользователя. Проверьте подключение и авторизацию.",
+    CONFIRM_DELETE_ALL_INPUT: "Вы уверены, что хотите удалить все Input показатели?",
+    CONFIRM_DELETE_ALL_OUTPUT: "Вы уверены, что хотите удалить все Output показатели?"
+};

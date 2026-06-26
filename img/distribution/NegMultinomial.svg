@@ -1,0 +1,42 @@
+<svg id="NegMultinomial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004c97;
+      }
+      .cls-2 {
+        fill: #fff;
+      }
+      .cls-3 {
+        stroke: #ccd0d4;
+        stroke-width: 0.5px;
+        fill: none;
+      }
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" width="49" height="30"/>
+    </clipPath>
+  </defs>
+
+  <g class="cls-4">
+    <rect class="cls-2" width="49" height="30"/>
+    
+    <path class="cls-1" d="M1 25
+                         Q2.5 24.5,4 23
+                         Q6 20,8 17
+                         Q10 14,12 12
+                         Q15 8,18 7
+                         Q20 6.5,22 7
+                         Q24 8,26 10
+                         Q28 12,31 14
+                         Q35 17,40 19
+                         Q45 21,47 22
+                         L48 30
+                         L1 30 Z"/>
+
+    <rect class="cls-3" x="0.25" y="0.25" width="48.5" height="29.5"/>
+  </g> 
+</svg>

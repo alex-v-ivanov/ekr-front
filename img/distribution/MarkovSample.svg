@@ -1,0 +1,41 @@
+<svg id="MarkovSample" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004c97;
+      }
+      .cls-2 {
+        fill: #00aaff;
+      }
+      .cls-3 {
+        stroke: #ccd0d4;
+        stroke-width: .5px;
+      }
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" width="49" height="30"/>
+    </clipPath>
+  </defs>
+
+    <g>
+      <rect x="2" y="18" width="4" height="12" class="cls-1"/>
+      <rect x="7" y="10" width="4" height="20" class="cls-2"/>
+      
+      <rect x="14" y="15" width="4" height="15" class="cls-1"/>
+      <rect x="19" y="5" width="4" height="25" class="cls-2"/>
+      
+      <rect x="26" y="12" width="4" height="18" class="cls-1"/>
+      <rect x="31" y="2" width="4" height="28" class="cls-2"/>
+      
+      <rect x="38" y="8" width="4" height="22" class="cls-1"/>
+      <rect x="43" y="14" width="4" height="16" class="cls-2"/>
+    </g>
+
+    <rect class="cls-3" x=".25" y=".25" width="48.5" height="29.5"/>
+</svg>

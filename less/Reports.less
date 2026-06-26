@@ -1,0 +1,1617 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100dvh;
+}
+
+.PPMonthCalendar__ModeButtons,
+.PPMonthCalendar__NowBlock {
+    display: none;
+}
+
+.PPMonthCalendarDaysView__Content {
+    tbody {
+        td {
+            .PPButton {
+                width: 45px !important;
+            }
+        }
+    }
+}
+
+.PPMonthCalendar {
+    width: 330px;
+}
+
+.PPMonthCalendar__CalendarBlock {
+    .PPMonthCalendarMonthsView {
+        table tbody .PPButton {
+            width: 100% !important;
+        }
+    }
+}
+
+.PPNoSelect.PPClearText {
+    margin-right: 4px;
+
+    .PPImage {
+        margin-top: -4px !important;
+
+        .PPImageElement {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+}
+
+.PPC,
+.PPC input {
+    font-family: "Proxima Nova";
+    font-size: 16px;
+}
+
+.PPListItem {
+    cursor: pointer;
+}
+
+.PPButton {
+    cursor: pointer;
+}
+
+.Disabled {
+    .PPButton {
+        cursor: default !important;
+    }
+}
+
+.PPTLVNoWrap .PPTLVView.PPTLVFirstCellSelect .PPTLVNodeFocused .PPTLVColumn0.PPTLVNodeCellEdited .PPTLVNodeText {
+    border: unset;
+}
+
+.PPTLVNoWrap .PPTLVView.PPTLVFirstCellSelect .PPTLVColumn0.PPTLVNodeCellEdited .PPTLVNodeText {
+    padding: 0px 3px 0px !important;
+}
+
+.PPDialog .PPDialogButtons>.PPButton {
+    height: 26px !important;
+}
+
+.Hidden {
+    display: none !important;
+}
+
+.contentPrognoz {
+    height: 100%;
+    overflow: auto;
+
+    .TopContainer {
+        align-self: stretch;
+        padding-left: 24px;
+        padding-right: 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+        display: flex;
+        height: 96px;
+        overflow: auto;
+    }
+}
+
+.content {
+
+    // margin: 8px;
+    .inputSelectDistribution {
+        color: #1c90ec;
+        font-size: 10px;
+        font-family: Proxima Nova;
+        font-weight: 400;
+        text-decoration: underline;
+        line-height: 22px;
+        word-wrap: break-word;
+        cursor: pointer;
+    }
+
+    .Frame32 {
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+        display: inline-flex;
+        align-self: stretch;
+
+        .tableTH {
+            width: 400px;
+        }
+
+        .StartDateTime {
+            width: 250px !important;
+            min-width: 250px !important;
+        }
+
+        .Frame24 {
+            flex: 1 1 0;
+            align-self: stretch;
+            padding: 16px;
+            background: white;
+            box-shadow: 0px 0px 12px rgba(23.72, 37.18, 57.37, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px #edf0f4 solid;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 16px;
+            display: inline-flex;
+
+            .Frame34 {
+                align-self: stretch;
+                height: 248px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                display: flex;
+            }
+
+            .Frame15Rows {
+
+                // width: 100%;
+                .Frame13 {
+                    // width: 100%;
+                    // align-self: stretch;
+                    // border-top: 1px #e6e9ed solid;
+                    // display: inline-flex;
+                    // align-items: center;
+                    // display: inline-flex;
+                    // align-self: stretch;
+                    // justify-content: space-around;
+                }
+
+                .Frame6,
+                .Frame7,
+                .Frame8 {
+                    min-width: 402px;
+                    align-self: stretch;
+                    padding-left: 9px;
+                    padding-right: 9px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background: white;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 10px;
+                    display: flex;
+
+                    &.Timer {
+                        min-width: 250px;
+                    }
+
+                    .Badge {
+                        width: 200px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        background: #f3f3f4;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        display: inline-flex;
+                        position: relative;
+
+                        .ProcentBar {
+                            height: 28px;
+                            background: #78d78c;
+                            position: absolute;
+                            left: 0;
+                        }
+
+                        .BadgeText {
+                            color: #051420;
+                            font-size: 16px;
+                            font-family: Proxima Nova;
+                            font-weight: 600;
+                            line-height: 22px;
+                            word-wrap: break-word;
+                            z-index: 1;
+                        }
+
+                        &.yellow {
+                            background: #f9da6d;
+                        }
+
+                        &.green {
+                            background: #78d78c;
+                        }
+                    }
+                }
+
+                .Text {
+                    color: #051420;
+                    font-size: 16px;
+                    font-family: Proxima Nova;
+                    font-weight: 400;
+                    line-height: 22px;
+                    word-wrap: break-word;
+                }
+            }
+        }
+    }
+
+    .ReportModal,
+    .SelectDistribution {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        .ReportModalBlock,
+        .SelectDistributionBlock {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            gap: 5px;
+            background: white;
+            box-shadow: 0px 6px 12px rgba(23.72, 37.18, 57.37, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px #edf0f4 solid;
+            font-family: "Proxima Nova";
+            font-size: 16px;
+
+            .ReportModalContent {
+                flex-grow: 1;
+                flex-basis: 300px;
+                overflow: auto;
+
+                input {
+                    border: 1px solid #e0e0e0;
+                }
+
+                .NotValid {
+                    border-color: #dc4b5b;
+                }
+
+                .ReportModalContentRow {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+                    height: 38px;
+
+                    .ReportModalContentAttrName {
+                        width: 100px;
+                    }
+                }
+            }
+
+            .ReportModalError {
+                display: none;
+                color: #dc4b5b;
+            }
+
+            .ReportModalButtons {
+                display: flex;
+                flex-basis: 100px;
+                align-items: flex-end;
+                justify-content: flex-end;
+                gap: 5px;
+            }
+
+            .ReportModalButton {
+                // margin-left: 10px;
+            }
+        }
+
+        .SelectDistributionBlock {
+            width: 95%;
+            height: 574px;
+            box-shadow: 0px 1px 12px rgba(24, 37, 57, 0.5);
+
+            .SelectDistributionTitle {
+                color: #051420;
+                font-size: 24px;
+                font-family: Proxima Nova;
+                font-weight: 600;
+                line-height: 22px;
+                word-wrap: break-word;
+                padding-left: 2px;
+                padding-bottom: 10px;
+            }
+
+            .SelectDistributionContent {
+                width: 100%;
+                height: 445px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 12px;
+                display: inline-flex;
+
+                .FrameLeft {
+                    width: 60%;
+                    height: 100%;
+                    padding: 16px;
+                    background: white;
+                    box-shadow: 0px 0px 12px rgba(23.72, 37.18, 57.37, 0.15);
+                    border-radius: 8px;
+                    overflow: hidden;
+                    border: 1px #edf0f4 solid;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 16px;
+                    display: inline-flex;
+
+                    .Frame34 {
+                        align-self: stretch;
+                        height: 429px;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        display: flex;
+
+                        .Frame33 {
+                            align-self: stretch;
+                            height: 429px;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            display: flex;
+
+                            .Frame12 {
+                                width: 100%;
+                                height: 24px;
+                                background: white;
+                                justify-content: flex-start;
+                                align-items: center;
+                                display: inline-flex;
+
+                                .Button {
+                                    font-size: 12px;
+                                    height: 12px;
+                                    width: 84px;
+                                    padding: 6px;
+                                }
+
+                                .Frame6 {
+                                    width: 100%;
+                                    align-self: stretch;
+                                    padding-left: 8px;
+                                    padding-right: 9px;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    gap: 10px;
+                                    display: flex;
+
+                                    .Frame6Label {
+                                        color: #051420;
+                                        font-size: 16px;
+                                        font-family: Proxima Nova;
+                                        font-weight: 400;
+                                        line-height: 22px;
+                                        word-wrap: break-word;
+                                    }
+                                }
+
+                                .Frame10 {
+                                    min-width: 8px;
+                                    background: white;
+                                }
+                            }
+
+                            #SelectDistributionGrid {
+                                width: 100%;
+
+                                table {
+                                    width: 100%;
+                                    font-family: Proxima Nova;
+                                    font-weight: 400;
+
+                                    word-wrap: break-word;
+                                    border-spacing: 0px;
+                                    border-collapse: separate;
+
+                                    thead {
+                                        th {
+                                            color: #556472;
+                                            text-align: left;
+                                            line-height: 34px;
+                                            font-weight: 400;
+                                            position: relative;
+
+                                            &.sortable {
+                                                cursor: pointer;
+                                            }
+
+                                            &.sortable::after {
+                                                content: url("../img/sorting.svg");
+                                                right: 18px;
+                                                top: 0px;
+                                                position: absolute;
+                                            }
+
+                                            &.asc::after {
+                                                content: url("../img/sort.svg");
+                                                right: 18px;
+                                                top: 4px;
+                                                position: absolute;
+                                                transform: rotate(180deg);
+                                            }
+
+                                            &.desc::after {
+                                                content: url("../img/sort.svg");
+                                                right: 18px;
+                                                top: 0px;
+                                                position: absolute;
+                                            }
+                                        }
+                                    }
+
+                                    tbody {
+                                        tr {
+                                            line-height: 34px;
+                                            cursor: pointer;
+
+                                            &:hover,
+                                            &.Selected {
+                                                background: #EBF5FE;
+                                            }
+
+                                            td {
+                                                border-top: 1px solid #e6e9ed;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .Frame32 {
+                            width: 461px;
+                            height: 24px;
+                            background: white;
+                            justify-content: flex-start;
+                            align-items: center;
+                            display: inline-flex;
+
+                            .Frame6 {
+                                align-self: stretch;
+                                padding-left: 8px;
+                                padding-right: 8px;
+                                padding-top: 20px;
+                                padding-bottom: 20px;
+                                justify-content: flex-start;
+                                align-items: center;
+                                gap: 10px;
+                                display: flex;
+
+                                .Frame6TH {
+                                    color: #556472;
+                                    font-size: 10px;
+                                    font-family: Proxima Nova;
+                                    font-weight: 400;
+                                    line-height: 22px;
+                                    word-wrap: break-word;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .FrameRight {
+                    width: 40%;
+                    height: 100%;
+                    padding: 16px;
+                    background: white;
+                    box-shadow: 0px 0px 12px rgba(23.72, 37.18, 57.37, 0.15);
+                    border-radius: 8px;
+                    overflow: hidden;
+                    border: 1px #edf0f4 solid;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 16px;
+                    display: inline-flex;
+
+                    .Frame34 {
+                        align-self: stretch;
+                        height: 43px;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        display: flex;
+
+                        .Frame33 {
+                            align-self: stretch;
+                            height: 51px;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            display: flex;
+
+                            .Frame12 {
+                                width: 100%;
+                                height: 29px;
+                                /* padding-left: 25px; */
+                                /* padding-right: 25px; */
+                                /* padding-top: 50px; */
+                                /* padding-bottom: 50px; */
+                                background: white;
+                                justify-content: center;
+                                align-items: center;
+                                display: inline-flex;
+
+                                .Frame8 {
+                                    padding-left: 9px;
+                                    padding-right: 9px;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    display: flex;
+
+                                    .ChartTitle {
+                                        text-align: center;
+                                        color: #051420;
+                                        font-size: 16px;
+                                        font-family: Proxima Nova;
+                                        font-weight: 400;
+                                        line-height: 17px;
+                                        word-wrap: break-word;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .Chart {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .SelectDistribution {
+        position: absolute;
+        top: 700px;
+        height: auto;
+    }
+
+    .OutputContent {
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        overflow: auto;
+
+        .OutputRow {
+            align-self: stretch;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            display: flex;
+
+            .OutputRowContent {
+                align-self: stretch;
+                border-top: 1px #e6e9ed solid;
+                justify-content: flex-start;
+                align-items: center;
+                display: inline-flex;
+                height: 52px;
+            }
+        }
+    }
+
+    font-family: "Proxima Nova";
+
+    .BlockHeader {
+        height: 22px;
+        color: #051420;
+        font-size: 20px;
+        font-family: "Proxima Nova";
+        font-weight: 600;
+        line-height: 22px;
+        word-wrap: break-word;
+    }
+
+    .Frame5 {
+        align-self: stretch;
+        // min-height: 206px;
+        padding: 16px;
+        background: white;
+        box-shadow: 0px 6px 12px rgba(24, 37, 57, 0.05);
+        border-radius: 8px;
+        // overflow: hidden;
+        border: 1px #edf0f4 solid;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+        display: flex;
+        flex-wrap: nowrap;
+
+        &.Frame5Top {
+            min-height: 240px;
+        }
+
+        &.Frame5TopReverse {
+            flex-direction: row-reverse;
+
+            .Frame5_left {
+                width: unset;
+            }
+
+            .Frame5_right {
+                width: 100%;
+            }
+        }
+
+        &.Frame5TopScenario {
+            flex-direction: column;
+            min-height: 265px;
+        }
+
+        &.Frame5Middle,
+        &.Frame5Bottom {
+
+            // overflow: auto;
+            .Frame6 {
+                border-radius: 8px;
+                overflow: hidden;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 16px;
+                display: inline-flex;
+                width: 100%;
+
+                .Frame34 {
+                    width: 100%;
+                }
+            }
+        }
+
+        &.Frame5Bottom {
+            // height: unset;
+            // max-height: 800px;
+        }
+
+        .ScenarioRowsContainer,
+        .ScenarioRowsContainerRight,
+        .ScenarioPoksRowsContainer,
+        .ParamScenarioRowsContainer {
+            align-self: stretch;
+            height: 169px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            display: flex;
+            overflow: auto;
+
+            .ScenarioRowContainer,
+            .ScenarioPoksRowContainer,
+            .ParamScenarioRowContainer {
+                align-self: stretch;
+                height: 40px;
+                border-top: 1px #e6e9ed solid;
+                justify-content: flex-start;
+                align-items: center;
+                display: inline-flex;
+
+                .ScenarioRow,
+                .ScenarioPoksRow,
+                .ParamScenarioRow {
+                    flex: 1 1 0;
+                    align-self: stretch;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background: white;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 10px;
+                    display: flex;
+
+                    .ScenarioRowLabel,
+                    .ScenarioPoksColType,
+                    .ScenarioPoksColLabel,
+                    .ParamScenarioColType,
+                    .ParamScenarioColLabel {
+                        color: #91969b;
+                        font-size: 16px;
+                        font-family: "Proxima Nova";
+                        font-weight: 400;
+                        line-height: 22px;
+                        word-wrap: break-word;
+                    }
+
+                    .ScenarioPoksColType,
+                    .ScenarioPoksColLabel,
+                    .ParamScenarioColType,
+                    .ParamScenarioColLabel {
+                        color: black;
+                    }
+
+                    .ScenarioPoksColValue,
+                    .ParamScenarioColValue {
+                        color: #91969b;
+                        font-size: 16px;
+                        font-family: "Proxima Nova";
+                        font-weight: 400;
+                        line-height: 22px;
+                        word-wrap: break-word;
+                    }
+
+                    .ScenarioPoksColType,
+                    .ParamScenarioColType {
+                        width: 200px;
+                    }
+
+                    .ScenarioPoksColLabel,
+                    .ParamScenarioColLabel {
+                        width: 450px;
+                    }
+
+                    .ScenarioPoksColCombos,
+                    .ParamScenarioColCombos {
+                        width: 300px;
+                        max-height: 82px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+
+                    .ScenarioPoksColValue,
+                    .ParamScenarioColValue {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        gap: 10px;
+                        height: 100%;
+                    }
+                }
+
+                .ScenarioRowCheckBox {
+                    width: 40px;
+                    align-self: stretch;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background: white;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 10px;
+                    display: flex;
+                }
+            }
+        }
+
+        .ScenarioPoksRowsContainer,
+        .ParamScenarioRowsContainer {
+            height: 100%;
+        }
+
+        .ScenarioPoksRowContainer,
+        .ParamScenarioRowContainer {
+            height: unset !important;
+        }
+
+        .Frame5_left {
+            gap: 16px;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            #ScenariosPrognozContainer,
+            #DateCloseKFOContainer {
+                width: 602px;
+
+                #ScenariosPrognozCombo {
+                    width: 346px;
+                }
+
+                #DateCloseKFO {}
+            }
+
+            .Frame6 {
+                width: 602px;
+
+                .ScenarioRowContainer {
+                    .ScenarioRowLabel {
+                        color: black;
+                        font-size: 16px;
+                        font-family: "Proxima Nova";
+                        font-weight: 400;
+                        line-height: 22px;
+                        word-wrap: break-word;
+                    }
+
+                    .ScenarioRow {
+                        cursor: pointer;
+
+                        &:hover,
+                        &.Active {
+                            background: #ebf5fe;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Frame5_right {
+            width: 100%;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .Frame6 {
+                width: 100%;
+                height: 207px;
+                border-radius: 8px;
+                overflow: hidden;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 16px;
+                display: inline-flex;
+
+                .Label {
+                    height: 22px;
+                    color: #051420;
+                    font-size: 20px;
+                    font-family: "Proxima Nova";
+                    font-weight: 400;
+                    line-height: 22px;
+                    word-wrap: break-word;
+                }
+
+                .LabelHeaderGrey {
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    display: flex;
+                    font-size: 16px;
+                    line-height: 22px;
+                    word-wrap: break-word;
+                    color: #8c9196;
+
+                    .HeaderGreyText {
+                        font-weight: 400;
+                    }
+
+                    .HeaderGreyVal {
+                        font-weight: 400;
+
+                        &.HeaderGreyValBold {
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .Frame34 {
+                    align-self: stretch;
+                    height: 169px;
+                    // border-bottom: 1px #e6e9ed solid;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    display: flex;
+
+                    .ScenarioRCFRowsContainer,
+                    .VersionRowsContainer {
+                        align-self: stretch;
+                        height: 201px;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        display: flex;
+                        overflow: auto;
+
+                        .ScenarioRCFRowContainer,
+                        .VersionRowContainer {
+                            align-self: stretch;
+                            height: 40px;
+                            border-top: 1px #e6e9ed solid;
+                            justify-content: flex-start;
+                            align-items: center;
+                            display: inline-flex;
+                            cursor: pointer;
+
+                            .ScenarioRCFRow,
+                            .VersionRow {
+                                flex: 1 1 0;
+                                align-self: stretch;
+                                padding-left: 8px;
+                                padding-right: 8px;
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                                background: white;
+                                justify-content: flex-start;
+                                align-items: center;
+                                gap: 10px;
+                                display: flex;
+
+                                &.Disabled {
+                                    background: white !important;
+                                    cursor: default !important;
+
+                                    .VersionRowLabel {
+                                        color: #91969b !important;
+                                    }
+                                }
+
+                                .ScenarioRCFRowLabel,
+                                .VersionRowLabel {
+                                    color: #051420;
+                                    font-size: 16px;
+                                    font-family: "Proxima Nova";
+                                    font-weight: 400;
+                                    line-height: 22px;
+                                    word-wrap: break-word;
+                                }
+                            }
+
+                            &:hover .ScenarioRCFRow,
+                            &.Active .ScenarioRCFRow,
+                            &:hover .VersionRow,
+                            &.Active .VersionRow {
+                                background: #ebf5fe;
+                            }
+                        }
+                    }
+
+                    .VersionRowCheckBox {
+                        width: 40px;
+                        align-self: stretch;
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        background: white;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 10px;
+                        display: flex;
+                        cursor: pointer;
+
+                        .CheckBox {
+                            width: 24px;
+                            height: 24px;
+                            position: relative;
+                            background: url("../img/check_box_outline_blank.svg") no-repeat center center;
+
+                            &.Checked {
+                                background: url("../img/check_box.svg") no-repeat center center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #VersionRCFFContainer {
+            .Frame6 {
+                height: 100%;
+
+                .Frame34 {
+                    height: 210px;
+                }
+            }
+        }
+    }
+
+    .Frame5BottomParamScenario {
+        overflow: unset;
+    }
+
+    .Frame5BottomScenarioPoks {
+        overflow: unset;
+    }
+
+    .Frame18 {
+        align-self: stretch;
+        // height: 370px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+
+        // overflow: auto;
+        .Frame15 {
+            align-self: stretch;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            display: flex;
+            overflow: auto;
+
+            .Frame12 {
+                height: 40px;
+                background: white;
+                align-items: center;
+                display: inline-flex;
+                // align-self: stretch;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    .tableTH {
+        align-self: stretch;
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        display: flex;
+        width: 100%;
+
+        .title {
+            color: #556472;
+            font-size: 14px;
+            font-family: "Proxima Nova";
+            font-weight: 400;
+            line-height: 22px;
+            word-wrap: break-word;
+        }
+    }
+
+    .PPCombo {
+        height: 42px;
+        padding: 10px;
+
+        .PPButtonNode {
+            width: 24px;
+            height: 24px;
+            border: unset;
+            margin-right: 6px;
+
+            &:hover,
+            &.Pressed {
+                border: unset !important;
+            }
+
+            cursor: pointer;
+
+            .PPArrow {
+                background: url("../img/ExpandMore.svg") no-repeat center center;
+                height: 24px;
+                width: 24px;
+
+                svg {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .PPTextBox {
+        &.PPSpinEdit {
+            height: 42px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+
+            .PPTextBoxInput {
+                color: #000;
+                font-size: 16px;
+                font-family: "Proxima Nova";
+                font-weight: 400;
+                line-height: 22px;
+                word-wrap: break-word;
+            }
+
+            .SpinButtons {
+                width: 24px;
+                height: 24px;
+                border: unset;
+                margin-top: 4px;
+
+                .PPButton {
+                    cursor: pointer;
+
+                    &:hover,
+                    &.Pressed {
+                        border: unset !important;
+                    }
+                }
+
+                .PPSpinEditButtonUp {
+                    background: url("../img/ExpandMore.svg") no-repeat center center;
+                    transform: rotate(180deg);
+
+                    svg {
+                        display: none;
+                    }
+                }
+
+                .PPSpinEditButtonDown {
+                    background: url("../img/ExpandMore.svg") no-repeat center center;
+                    transform: rotate(0deg);
+
+                    svg {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .PPDateTimePicker {
+        height: 42px;
+        padding: 10px;
+
+        .PPDateTimeEdit {
+            height: unset;
+            padding: unset;
+        }
+
+        .PPButtonNode {
+            width: 24px;
+            height: 24px;
+            border: unset;
+            margin-right: 6px;
+
+            &:hover,
+            &.Pressed {
+                border: unset !important;
+            }
+
+            cursor: pointer;
+
+            .PPArrow {
+                background: url("../img/CalendarToday.svg") no-repeat center center;
+                height: 24px;
+                width: 24px;
+
+                svg {
+                    display: none;
+                }
+            }
+        }
+
+        &.red {
+            &.PPCombo {
+                border-color: #dc4b5b;
+            }
+
+            .PPArrow {
+                background: unset;
+                background-color: #dc4b5b;
+                -webkit-mask-image: url("../img/CalendarToday.svg");
+                mask-image: url("../img/CalendarToday.svg");
+            }
+        }
+    }
+
+    .PPDateTimePicker[disabled] {
+        .PPArrow {
+            background: unset;
+            background-color: #9da2a6;
+            -webkit-mask-image: url("../img/CalendarToday.svg");
+            mask-image: url("../img/CalendarToday.svg");
+        }
+    }
+
+    .Frame13 {
+        height: 86px;
+        border-top: 1px #e6e9ed solid;
+        justify-content: flex-start;
+        align-items: center;
+        display: inline-flex;
+        width: 100%;
+
+        .Frame6 {
+            width: 250px;
+            min-width: 250px;
+            align-self: stretch;
+            padding-left: 9px;
+            padding-right: 9px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background: white;
+            justify-content: center;
+            align-items: flex-start;
+            /* gap: 10px; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Frame7,
+        .Frame9,
+        .Frame10 {
+            align-self: stretch;
+            padding-left: 9px;
+            padding-right: 9px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background: white;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            display: flex;
+        }
+
+        .Frame8 {
+            align-self: stretch;
+            padding-left: 9px;
+            padding-right: 9px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background: #f3f3f4;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            display: flex;
+            cursor: pointer;
+            position: relative;
+
+            .distributionParams {
+                flex: 1 1 0;
+                color: #556472;
+                font-size: 16px;
+                font-family: "Proxima Nova";
+                font-weight: 400;
+                line-height: 22px;
+                word-wrap: break-word;
+            }
+
+            .distributionParams:before {
+                display: block;
+                width: 24px;
+                height: 24px;
+                content: url("../img/edit.svg");
+                position: absolute;
+                top: 3px;
+                right: 2px;
+            }
+        }
+
+        .Frame7 {
+            min-width: 300px;
+
+            img {
+                // width: 284px;
+                // height: 65px;
+                height: 100%;
+            }
+        }
+
+        .Frame8 {
+            width: 250px;
+            min-width: 250px;
+        }
+
+        .Frame9 {
+            min-width: 350px;
+        }
+
+        .Frame10 {
+            min-width: 250px;
+
+            .checkIntegrate {
+                flex: 1 1 0;
+            }
+        }
+    }
+}
+
+.FooterContainer {
+    width: 100%;
+    height: 82px;
+    margin-top: 16px;
+    background: white;
+    box-shadow: 0px 0px 12px rgba(23.72, 37.18, 57.37, 0.15);
+
+    overflow: hidden;
+    border-top: 1px #edf0f4 solid;
+    border-bottom: 1px #edf0f4 solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    display: inline-flex;
+
+    .PrognozType {
+        align-items: center;
+        gap: 32px;
+        display: inline-flex;
+    }
+
+    .FooterLabelContainer {
+        padding-left: 24px;
+        padding-right: 24px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+        display: flex;
+
+        .Label {
+            color: #051420;
+            font-size: 20px;
+            font-family: Proxima Nova;
+            font-weight: 600;
+            line-height: 22px;
+            word-wrap: break-word;
+        }
+    }
+
+    .FooterInputsContainer {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        display: flex;
+    }
+
+    .Input {
+        width: 358px;
+        height: 40px;
+        padding-left: 16px;
+        padding-right: 8px;
+
+        border-radius: 4px;
+        border: 1px #ccd0d4 solid;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 4px;
+        display: flex;
+
+        .InputField {
+            font-size: 16px;
+            font-family: Proxima Nova;
+            font-weight: 400;
+            line-height: 22px;
+            word-wrap: break-word;
+            border: unset;
+            background: unset;
+            width: 100%;
+        }
+
+        &.Disabled {
+            background: #f3f3f4;
+
+            .InputField {
+                color: #556472;
+            }
+        }
+    }
+
+    #PrognozMarker {
+        width: 100px;
+    }
+}
+
+.PPCombo {
+    height: 32px;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    width: 100%;
+}
+
+.Combo38 {
+    .PPCombo {
+        height: 28px;
+        font-family: "Proxima Nova";
+        font-size: 16px;
+        width: 100%;
+        padding: 2px 8px;
+    }
+
+    .PPTextBox.PPTextBoxRightContent .PPButton.PPFindText {
+        height: 22px;
+    }
+}
+
+.ChevronLeft {
+    background: url("../img/ChevronLeft.svg") no-repeat center center;
+}
+
+.CalendarTodayRed {
+    background-color: #dc4b5b;
+    -webkit-mask-image: url("../img/CalendarToday.svg");
+    mask-image: url("../img/CalendarToday.svg");
+}
+
+.CalendarToday {
+    background: url("../img/CalendarToday.svg") no-repeat center center;
+}
+
+.ExpandMore {
+    background: url("../img/ExpandMore.svg") no-repeat center center;
+}
+
+.UnfoldMore {
+    background: url("../img/UnfoldMore.svg") no-repeat center center;
+}
+
+.LabelHeader {
+    color: #051420;
+    font-size: 32px;
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.Disabled {
+    .Label {
+        color: #91969b;
+    }
+}
+
+.Label {
+    color: #051420;
+    font-size: 16px;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+.Frame24 {
+    align-self: stretch;
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    display: flex;
+    height: calc(100% - 196px);
+    overflow: auto;
+
+    .Frame11 {
+        align-self: stretch;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        display: inline-flex;
+    }
+}
+
+.Button {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    word-wrap: break-word;
+    // background: #d8ebfd;
+    background: #004c97;
+    cursor: pointer;
+    height: 24px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    .Text {
+        padding-left: 4px;
+        padding-right: 4px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        color: #004c97;
+    }
+
+    .SaveIco {
+        width: 24px;
+        height: 24px;
+        background: url("../img/save.svg") no-repeat center center;
+    }
+
+    .SaveAsIco {
+        width: 24px;
+        height: 24px;
+        background: url("../img/save_as.svg") no-repeat center center;
+    }
+
+    .AutoStoriesIco {
+        width: 24px;
+        height: 24px;
+        background: url("../img/auto_stories.svg") no-repeat center center;
+    }
+
+    .DeleteIco {
+        width: 24px;
+        height: 24px;
+        background: url("../img/delete.svg") no-repeat center center;
+    }
+
+    &.Disabled {
+        opacity: 0.5 !important;
+        cursor: default;
+    }
+
+    &.Primary {
+        background: #004c97;
+        color: white;
+
+        &.Disabled {
+            background: #7fa5cb;
+            cursor: default;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .Text {
+            color: white;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fcfbfb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e6e9ed;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e6e9ed;
+}
+
+.waiter {
+    background-image: url(data:image/gif;base64,R0lGODlhGAAYAPIAAAC1VgC2V/yLAP2MAACQzQCQzgAAAAAAACH5BA0IAAYAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAGAAYAAADMmi63P4wykmrvTjrzbstBQMAjCBEIKiMoyIMw/mkoQEErQHDaL2SC55nSCwaj8ikUpIAACH5BA0IAAYALAAAAAAYABgAAAM0aLrc/jDKSau9OOvNZynd9y0AwAhCJIJGWSrCMKTPqgDBa8gyZN+mRU/F6hiPyKRyyWw6EgAh+QQNCAAGACwAAAAAGAAYAAADQ2i63P4wykmrvY0QnPXmileASmGO5IkaQXCpStsughDBrKwIw2A/OJnLwPNBgrrdD3hazCw4UJRDMH1IGpJ2y+16IQkAIfkEDQgABgAsAAAAABgAGAAAA1Joutz+phRImZS13pnh7t61AACofAYQkCYarCXovkErGnStDAM1vzte7/HTCYeOYpAXwuBoS2RDGfTdcjYnVnZTrbKcVIzrNFlu5gUqrQ6z34sEACH5BA0IAAYALAAAAAAYABgAAANhaLrc/i8ESJmUtd6Z4e4LQSyfIgiUKCqlMAzooxbspbwvVOy0UeIDHa+GMQCFOyLn+OD1fjjk02aMNoc+KtPhVN6sXCw0d01mi9sGYTc6c1ywVNu9OIG890YpT6Ly+3+BCQAh+QQNCAAGACwAAAAAGAAYAAADVmi63P6wjRGrmtNGTPXjngIAC+gBwXhhYZCShqm57ppBRbHQgd05uZyC58MFh7TiI6gzEGOs5dGZhN6ku6rM8txWRjXrzwKGeb8wcchxDrU9b/h4XUkAACH5BA0IAAYALAAAAAAYABgAAANGaLrc/jDKSau92AiRmRgD1xkgOJLlBQBLOURFsQBBwKLmE8fKWisuyE5mqP1wLyHRQLMBU5ZVC9oJjqxVkOiaPHm/4HAlAQAh+QQNCAAGACwAAAAAGAAYAAADMGi63P4wykmrvTjrzbsag1QUDAAsIAiNo2KaX7qybgAbaTiXZ6xyP49wSCwaj8hLAgAh+QQNCAAGACwAAAAAGAAYAAADMmi63P4wykmrvTjrzbstBQMAjCBEIKiMoyIMw/mkoQEErQHDaL2SC55nSCwaj8ikUpIAACH5BA0IAAYALAAAAAAYABgAAAMyaLrc/jDKSau9OOvNuy0FAwCMIEQgqIyjIgzD+aShAQStAcNovZILnmdILBqPyKRSkgAAIfkEDQgABgAsAAAAABgAGAAAAzJoutz+MMpJq7046827LQUDAIwgRCCojKMiDMP5pKEBBK0Bw2i9kgueZ0gsGo/IpFKSAAAh+QQNCAAGACwAAAAAGAAYAAADMmi63P4wykmrvTjrzbstBQMAjCBEIKiMoyIMw/mkoQEErQHDaL2SC55nSCwaj8ikUpIAADs=);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.customPlaceholder {
+    ::placeholder {
+        color: lightgrey;
+        font-size: 12px;
+    }
+}

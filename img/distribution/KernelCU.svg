@@ -1,0 +1,32 @@
+<svg id="KernelCU" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004c97;
+      }
+      .cls-2 {
+        fill: #fff;
+      }
+      .cls-3 {
+        stroke: #ccd0d4;
+        stroke-width: .5px;
+      }
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" width="49" height="30"/>
+    </clipPath>
+  </defs>
+  <g class="cls-5">
+    <g>
+      <rect class="cls-2" width="49" height="30"/>
+      <path class="cls-1" d="m6.36,27.85l6.25,-14.13l2.91,2.4l1.58,1.02l10.08,0.04l5.96,-11.47l4.09,3.49l4.11,-6.35l0.08,26.64l-35.4,0l0.35,-1.65z"/>
+    </g>
+  </g>
+  <rect class="cls-3" x="0.25" y="0.25" width="48.50" height="29.50"/>
+</svg>

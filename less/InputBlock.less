@@ -1,0 +1,160 @@
+.InputFrame {
+    width: 100%;
+    min-height: 100px;
+    box-shadow: 0px 0px 12px rgba(23.72, 37.18, 57.37, 0.15);
+    border-radius: 8px;
+    border: 1px #edf0f4 solid;
+    padding: 16px;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    .InputFrameHead {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        height: 24px;
+
+        .FrameTitle {
+            color: #051420;
+            font-size: 16px;
+            font-family: "Proxima Nova";
+            font-weight: 400;
+            line-height: 22px;
+            word-wrap: break-word;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+
+    .FrameList {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 24px;
+
+        .ListHeadlines {
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+            padding: 8px;
+            border-bottom: 6px double #000;
+
+            .HeadlineItem {
+                box-sizing: border-box;
+                width: 100%;
+                min-width: 200px;
+                max-width: 200px;
+                max-height: 30px;
+                border-right: 2px solid #000;
+                padding: 0 8px;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            .LongItem {
+                min-width: 300px;
+                max-width: 350px;
+            }
+
+            .ShortItem {
+                min-width: 100px;
+                max-width: 100px;
+            }
+        }
+
+        .ListContent {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 8px;
+
+            .ListRow {
+                width: 100%;
+                height: 75px;
+                display: flex;
+                align-items: center;
+                box-shadow: 0px 0px 12px rgba(23.72, 37.18, 57.37, 0.15);
+                box-sizing: border-box;
+                padding: 8px;
+                margin-top: 8px;
+                border-radius: 8px;
+
+                .RowItem {
+                    box-sizing: border-box;
+                    width: 100%;
+                    min-width: 200px;
+                    max-width: 200px;
+                    height: 60px;
+                    border-right: 2px solid #000;
+                    padding: 0 8px;
+
+                    &:last-child {
+                        border: none;
+                    }
+                }
+
+                .RowBtn {
+                    height: 36px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    padding: 4px;
+                    background-color: #004c97;
+                    border-radius: 4px;
+                    font-family: "Proxima Nova";
+                    font-size: 16px;
+                    color: #fff;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                }
+
+                .RowItemName {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; // количество строк
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+
+                    text-overflow: ellipsis;
+                }
+
+                .RowInlineContent {
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                }
+
+                .RowImageItem {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .LongItem {
+                    min-width: 300px;
+                    max-width: 350px;
+                }
+
+                .ShortItem {
+                    min-width: 100px;
+                    max-width: 100px;
+                }
+
+
+            }
+        }
+
+
+    }
+
+    .InputSelect {
+        width: 250px;
+
+    }
+
+}
