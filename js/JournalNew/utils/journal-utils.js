@@ -1,6 +1,5 @@
 /**
- * Утилиты Journal: форматирование дат, склонения, Select2.
- * Используется глобальный jQuery ($).
+ * Утилиты Journal: форматирование дат 
  */
 
 export function dateRU(date) {

@@ -14,6 +14,10 @@ export const ForeKeys = {
     PROGNOZ_MAIN_MODULE: 1145438
 };
 
+/** Статус API Форсайт. */
+export const ApiStatus = {
+    ERROR_LOWER: "error"
+};
 
 /** Сообщения для showDialog. */
 export const JournalMessages = {

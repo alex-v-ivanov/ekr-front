@@ -7,7 +7,7 @@ import { JournalView } from '../views/JournalView.js';
 import { JournalCardsView } from '../views/JournalCardsView.js';
 import { JournalFiltersView } from '../views/JournalFiltersView.js';
 import { JournalDetailsView } from '../views/JournalDetailsView.js';
-import { ApiStatus } from '../../Common/constants.js';
+import { ApiStatus } from '../constants.js';
 import { dateRU } from "../utils/journal-utils.js";
 
 export class JournalController {
@@ -25,13 +25,8 @@ export class JournalController {
         this.detailsView = null;
     }
 
-    initFiltersAndDetails() {
-        this.filtersView = new JournalFiltersView(this.model, this);
-        this.detailsView = new JournalDetailsView(this.model, this);
-    }
-
+    // Инициализация контроллера
     init() {
-
         this.view.init();
 
         this.model.type = this.report.urlPars.type;
@@ -60,12 +55,9 @@ export class JournalController {
         
     }
 
-    initDetailsButtonListener() {
-        $(document).on('click', '.details-btn', (e) => {
-            const $btn = $(e.currentTarget);
-            const versionId = $btn.data('version-id');
-            this.openDetails(versionId);
-        });
+    initFiltersAndDetails() {
+        this.filtersView = new JournalFiltersView(this.model, this);
+        this.detailsView = new JournalDetailsView(this.model, this);
     }
 
     getData(isUpdate) {
@@ -162,9 +154,16 @@ export class JournalController {
         this.filtersView.clearFilter();
     }
 
-    initModalCloseHandler() {
+    initDetailsButtonListener() {
+        $(document).on('click', '.details-btn', (e) => {
+            const $btn = $(e.currentTarget);
+            const versionId = $btn.data('version-id');
+            this.openDetails(versionId);
+        });
+    }
 
-        // Закрытие по крестику
+    initModalCloseHandler() {
+        // Закрытие деталей по крестику
         $(document).on('click', '#closeDetailsBtn', (e) => {
             if (this.detailsView) {
                 this.detailsView.closeModal();
