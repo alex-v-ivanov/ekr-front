@@ -31,6 +31,8 @@ export class JournalController {
 
     init() {
 
+        debugLog('[Journal Controller]: Initialization...');
+
         this.view.init();
 
         const type = this.reports.urlPars.type;
