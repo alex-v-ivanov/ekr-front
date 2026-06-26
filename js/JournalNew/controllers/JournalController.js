@@ -8,6 +8,7 @@ import { JournalCardsView } from '../views/JournalCardsView.js';
 import { JournalFiltersView } from '../views/JournalFiltersView.js';
 import { JournalDetailsView } from '../views/JournalDetailsView.js';
 import { ApiStatus } from '../../Common/constants.js';
+import { dateRU } from "../utils/journal-utils.js";
 
 export class JournalController {
     constructor(model, report) {
@@ -30,8 +31,6 @@ export class JournalController {
     }
 
     init() {
-
-        debugLog('[Journal Controller]: Initialization...');
 
         this.view.init();
 
@@ -59,8 +58,6 @@ export class JournalController {
 
         this.initModalCloseHandler();
         
-        
-        debugLog('[Journal Controller]: Initialization completed');
     }
 
     initDetailsButtonListener() {
@@ -115,7 +112,7 @@ export class JournalController {
     openDetails(versionId) {
         this.detailsView.openModal();
 
-        const dateStr = this.model.getDateFromValue().toShortDate();
+        const dateStr =  dateRU(this.model.getDateFromValue());
         this.apiModel.fetchDetailsByVersionId(versionId, dateStr)
             .then(response => this.handleDetailsResponse(response));
     }
@@ -172,23 +169,6 @@ export class JournalController {
             if (this.detailsView) {
                 this.detailsView.closeModal();
             }
-        });
-
-        // Закрытие по клику на фон
-        $(document).on('click', '.SelectDetails', (e) => {
-            if (this.detailsView && $(e.target).closest('.SelectDetailsBlock').length === 0) {
-                this.detailsView.closeModal();
-            }
-        });
-
-        // Закрытие по клавише ESC
-        $(document).on('keydown', (e) => {
-            if (e.key === 'Escape' && this.detailsView) {
-                const $modal = $('.SelectDetails');
-                if (!$modal.hasClass('Hidden')) {
-                    this.detailsView.closeModal();
-                }
-            }
-        });
+        });        
     }
 }

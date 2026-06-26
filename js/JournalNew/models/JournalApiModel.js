@@ -46,16 +46,16 @@ export class JournalApiModel {
     }
 
     fetchDetailsByVersionId(versionId, dateStr) {
-        const R = this.reports;
         const json = {
             type: 0,
             current: '',
             version: '' + versionId + '',
             date: dateStr
         };
-        const _params = [R.bi.OpenArgs('json', JSON.stringify(json), R.bi.ItDataType.String)];
-        return R.bi.getResultForeModule({
-            moduleKey: R.ForeKeys.DK_STRESS_1144013,
+
+        const _params = [Foresight.OpenArgs('json', JSON.stringify(json), Foresight.ItDataType.String)];
+        return this.Foresight.getResultForeModule({
+            moduleKey: this.ForeKeys.STRESSTEST_MAIN_MODULE,
             methodName: 'GetInfoLog',
             args: _params
         });
