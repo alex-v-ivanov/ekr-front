@@ -1,14 +1,20 @@
 /**
- * API-модель: все запросы к серверу.
+ * API-модель: запросы к бэкенду.
  */
 
+import { JournalType, ForeKeys } from "../constants.js";
+import { Foresight } from "../services/ForesightAPI.js";
+import { dateRU } from "../utils/journal-utils.js";
+
 export class JournalApiModel {
-    constructor(reports) {
-        this.reports = reports;
+    constructor(config) {
+        this.ForeKeys = ForeKeys;
+        this.Foresight = new Foresight(config);
     }
 
-    fetchJournalData(type, dateStr) {
-        const R = this.reports;
+    fetchJournalData(type, dateFrom) {
+        const dateStr = dateRU(dateFrom)
+
         let json = {
             date: dateStr,
             current: '',
@@ -17,19 +23,22 @@ export class JournalApiModel {
         let method = 'GetInfoLog';
         let module = null;
 
-        if (type == 1) {
+        if (type == JournalType.STRESSTEST) {
             json.type = 0;
-            module = R.ForeKeys.DK_STRESS_1144013;
-        } else if (type == 2) {
+            module = this.ForeKeys.STRESSTEST_MAIN_MODULE;
+        } 
+        else if (type == JournalType.PROGNOZ) {
             json.type = 1;
             json.version = '-1';
-            module = R.ForeKeys.DK_PROGNOZ_1145438;
-        } else {
+            module = this.ForeKeys.PROGNOZ_MAIN_MODULE;
+        } 
+        else {
             return Promise.resolve([]);
         }
 
-        const _params = [R.bi.OpenArgs('json', JSON.stringify(json), R.bi.ItDataType.String)];
-        return R.bi.getResultForeModule({
+        const _params = [Foresight.OpenArgs('json', JSON.stringify(json), Foresight.ItDataType.String)];
+        
+        return this.Foresight.getResultForeModule({
             moduleKey: module,
             methodName: method,
             args: _params

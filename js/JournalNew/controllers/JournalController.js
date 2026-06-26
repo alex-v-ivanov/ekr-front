@@ -10,14 +10,14 @@ import { JournalDetailsView } from '../views/JournalDetailsView.js';
 import { ApiStatus } from '../../Common/constants.js';
 
 export class JournalController {
-    constructor(model, reports) {
+    constructor(model, report) {
         this.model = model;
-        this.reports = reports;
+        this.report = report;
 
         // Инициализация представлений
         this.view = new JournalView();
-        this.cardsView = new JournalCardsView(model);
-        this.apiModel = new JournalApiModel(reports);
+        this.cardsView = new JournalCardsView(this.model);
+        this.apiModel = new JournalApiModel(this.report.config);
 
         // Фильтры и детали инициализируем после создания контроллера
         this.filtersView = null;
@@ -35,8 +35,7 @@ export class JournalController {
 
         this.view.init();
 
-        const type = this.reports.urlPars.type;
-        this.model.setType(type);
+        this.model.type = this.report.urlPars.type;
 
         if (this.model.isStressType()) {
             this.view.setStressTheme();
@@ -45,6 +44,8 @@ export class JournalController {
         const dt = new Date();
         const currentDate = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate(), 0, 0, 0, 0);
         this.model.setDateFrom(this.view.initDateTimePicker("DateFrom", currentDate));
+
+        this.initFiltersAndDetails();
 
         this.filtersView.initUser();
         this.filtersView.initCreationDatePicker();
@@ -57,6 +58,9 @@ export class JournalController {
         this.initDetailsButtonListener();
 
         this.initModalCloseHandler();
+        
+        
+        debugLog('[Journal Controller]: Initialization completed');
     }
 
     initDetailsButtonListener() {
@@ -70,10 +74,9 @@ export class JournalController {
     getData(isUpdate) {
         if (!this.model.isStressType() && !this.model.isPrognozType()) return;
 
-        const dateStr = this.model.getDateFromValue().toShortDate();
-        this.view.showWaiter("getData");
+        const dateFrom = this.model.getDateFromValue()
 
-        this.apiModel.fetchJournalData(Number(this.model.getType()), dateStr)
+        this.apiModel.fetchJournalData(this.model.getType(), dateFrom)
             .then(response => this.handleDataResponse(response, isUpdate));
     }
 

@@ -59,11 +59,11 @@ export class JournalModel {
     }
 
     isStressType() {
-        return Number(this.type) === JournalType.STRESS;
+        return this.type === JournalType.STRESSTEST;
     }
 
     isPrognozType() {
-        return Number(this.type) === JournalType.PROGNOZ;
+        return this.type ===  JournalType.PROGNOZ;
     }
 
     setDataInterval(interval) {

@@ -2,8 +2,6 @@
  * Основное представление: управление корневыми UI-элементами.
  */
 
-import { JournalType } from '../constants.js';
-
 export class JournalView {
     constructor() {
         this.$body = null;
